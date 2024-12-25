@@ -1,0 +1,19 @@
+Original Text,Source Language,Target Language,Translation
+"hello, how are you?",en,de,"Hallo, wie geht es Ihnen?"
+"hello, how are you?",en,tr,"Merhaba, nasılsın?"
+/Users/khaled/LLM_chatbot/.venv/bin/python /Users/khaled/LLM_chatbot/chatbot.py,en,hello,"Error: Bad request, message: Value for 'target_lang' not supported."
+/Users/khaled/LLM_chatbot/.venv/bin/python /Users/khaled/LLM_chatbot/chatbot.py,en, how are you?,"Error: Bad request, message: Value for 'target_lang' not supported."
+"Hallo, how are you?",so,de,"Error: Bad request, message: Value for 'source_lang' not supported."
+"Hallo, how are you?",so,ar,"Error: Bad request, message: Value for 'source_lang' not supported."
+"Hallo, how are you?",so,tr,"Error: Bad request, message: Value for 'source_lang' not supported."
+/Users/khaled/LLM_chatbot/.venv/bin/python /Users/khaled/LLM_chatbot/chatbot.py,en,/Users/khaled/LLM_chatbot/.venv/bin/python /Users/khaled/LLM_chatbot/chatbot.py,"Error: Bad request, message: Value for 'target_lang' not supported."
+"hello, how are you?",en,de,"Hallo, wie geht es Ihnen?"
+"hello, how are you?",en,tr,"Merhaba, nasılsın?"
+"hello, how are you?",en,ar,مرحباً، كيف حالك؟
+wie geht's dir?,af,tr,"Error: Bad request, message: Value for 'source_lang' not supported."
+wie geht es dir?,af,tr,"Error: Bad request, message: Value for 'source_lang' not supported."
+"hallo, was machst du?",so,tr,"Error: Bad request, message: Value for 'source_lang' not supported."
+hallo,fi,tr,Merhaba
+ich heiße Yannick,de,tr,Benim adım Yannick.
+nasılsın,tr,de,Wie sind Sie
+exıt,fr,asd,"Error: Bad request, message: Value for 'target_lang' not supported."
