@@ -3,11 +3,9 @@ import os
 import pandas as pd
 from dotenv import load_dotenv
 
-# Load the DeepL API key from the .env file
 load_dotenv()
 api_key = os.getenv("DEEPL_API_KEY")
 
-# Initialize DeepL translator
 translator = deepl.Translator(api_key)
 
 def translate_text(text, source_lang, target_langs):
@@ -37,7 +35,6 @@ def chatbot():
             print("See you!")
             break
         
-        # Ask if the user wants to provide the source language
         specify_source = input("Do you want to specify the source language? (yes/no): ").strip().lower()
         
         if specify_source == "yes":
@@ -49,10 +46,10 @@ def chatbot():
                 print("Could not detect language. Please provide the source language code.")
                 source_language = input("Enter the source language code (e.g., 'en' for English): ").strip()
         
-        # Ask for multiple target languages
+        # multiple target languages
         target_languages = input("Enter comma-separated target language codes (e.g., 'es,fr,de'): ").split(',')
         
-        # Translate the message to multiple languages
+        # Translating the message to multiple languages
         translations = translate_text(user_message, source_language, target_languages)
         
         for lang, translation in translations.items():
